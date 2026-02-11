@@ -302,7 +302,10 @@
             heart.className = 'heart';
             
             const offsetX = window.innerWidth / 2 - 70;
-            const offsetY = window.innerHeight / 2 - 150;
+            
+            // ИЗМЕНЕНИЕ: Опустили центр появления ниже (было -150).
+            // Теперь сердечки будут появляться ближе к центру экрана, не перекрывая Score.
+            const offsetY = window.innerHeight / 2 - 20; 
             
             const startX = offsetX + (Math.random() - 0.5) * (window.innerWidth * 0.3);
             const startY = offsetY + (Math.random() - 0.5) * (window.innerHeight * 0.4);
